@@ -7,10 +7,35 @@ Indicators/ Test Control & Test Results
 // var indicators = {testStarted: false, testEnded: false, totalTestTime: 0, timeLeft: 0,};
 // var results = {wpm: 0, wpmChange: 0, cpm: 0, cpmChange: 0, accuracy: 0, accuracyChange: 0,};
     var appData = {
-        indicators: {testStarted: false, testEnded: false, totalTestTime: 0, timeLeft: 0,},
-        results: {wpm: 0, wpmChange: 0, cpm: 0, cpmChange: 0, accuracy: 0, accuracyChange: 0,},
-        words: {currentWordIndex: 0 , testWords: [],},
+        indicators: {
+            testStarted: false, 
+            testEnded: false,
+            totalTestTime: 0,
+            timeLeft: 0,
+        },
+        
+        results: {
+            wpm: 0,
+            wpmChange: 0,
+            cpm: 0,
+            cpmChange: 0,
+            accuracy: 0,
+            accuracyChange: 0,
+        },
+
+        words: {
+            currentWordIndex: 0,
+            testWords: [],
+            currentWord: {
+                value: {
+                    correct: '',
+                    user: '',
+                },
+            },
+        },
     };
+    var word = function(){}; //word constructor
+    word.prototype.update = function(value) {}; //update method
 
 // public
 
@@ -31,6 +56,7 @@ Indicators/ Test Control & Test Results
     // Test Words
     fillListOfTestWords: function(textNumber) {}, //fills words.testWords
     getListOfTestWords: function() {}, //get list of test words words.testWords
+    moveToNewWord: function() {}, //updated current word by creating a new instance of the word class
+    updateCurrentWord: function(value) {}, //updae current word using user input
     };
-
 }());
