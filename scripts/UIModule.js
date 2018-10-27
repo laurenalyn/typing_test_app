@@ -14,6 +14,8 @@ var UIModule = (function() {
     };
 // public
     return {
+        //Get DOM Elements
+        getDomElements: function () {},
         //Indicators/ Test Control
         updateTimeLeft: function() {},
         //Results

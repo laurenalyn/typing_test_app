@@ -35,7 +35,7 @@ Indicators/ Test Control & Test Results
                     user: '',
                     isCorrect: false
                 },
-                
+
                 character: {
                     correct: [],
                     user: [],
@@ -60,7 +60,8 @@ Indicators/ Test Control & Test Results
     reduceTime: function() {}, //reduces the time by one second
     timeLeft: function() {}, //checks if there is time left to continue the test
     testEnded: function() {}, //check if the test has already ended
-    testStarted: function() {}, // check if the test has started
+    testStarted: function() {}, //check if the test has started
+    getTimeLeft: function() {}, //get time left: appData.timeLeft
     // Typing Test Results
     calculateWpm: function() {}, //calculates wpm and wpmChange and updates them in appData
     calculateCpm: function() {}, //calculates cpm and cpmChange and updates them in appData
