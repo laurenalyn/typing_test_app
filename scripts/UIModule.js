@@ -35,6 +35,6 @@ var UIModule = (function() {
         formattWord: function(wordObject, wordHTML) {},
         setActiveWord: function(index) {},
         deactivateCurrentWord: function() {},
-        scroll: function(){},
+        scroll: function() {},
     };
 }());
