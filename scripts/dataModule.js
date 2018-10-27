@@ -30,23 +30,23 @@ Indicators/ Test Control & Test Results
             currentWordIndex: 0,
             testWords: [],
             currentWord: {
-                value: {
-                    correct: '',
-                    user: '',
-                    isCorrect: false
-                },
+                // value: {
+                //     correct: '',
+                //     user: '',
+                //     isCorrect: false
+                // },
 
-                character: {
-                    correct: [],
-                    user: [],
-                    totalCorrect: 0,
-                    totalTest: 0,
-                },
+                // character: {
+                //     correct: [],
+                //     user: [],
+                //     totalCorrect: 0,
+                //     totalTest: 0,
+                // },
             },
         },
     };
-
-    var word = function(){}; //word constructor
+ 
+    var word = function(index){}; //word constructor
     word.prototype.update = function(value) {}; //update method
 
 // public
@@ -69,7 +69,7 @@ Indicators/ Test Control & Test Results
     // Test Words
     fillListOfTestWords: function(textNumber) {}, //fills words.testWords
     getListOfTestWords: function() {}, //get list of test words words.testWords
-    moveToNewWord: function() {}, //updated current word by creating a new instance of the word class
+    moveToNewWord: function() {}, //uincrements the currentWordIndex - updated current word by creating a new instance of the word class- updates numOfCorrectWords, numOfCorrectCharacters, and numOfTestCharacters
     updateCurrentWord: function(value) {}, //updae current word using user input
     };
 }());
