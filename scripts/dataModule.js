@@ -10,3 +10,16 @@ var appData = {
 };
 
 // public
+var dataModule = (function() {
+    return {
+    //Indicator - Test Control 
+    setTestTime: function(x) {}, //sets the total test time to x
+    initializeTimeLeft: function() {}, //initializes time left to the total test time
+    startTest: function() {}, //starts the test
+    endTest: function() {}, //ends the test
+    reduceTime: function() {}, //reduces the time by one second
+    timeLeft: function() {}, //checks if there is time left to continue the test
+    testEnded: function() {}, //check if the test has already ended
+    testStarted: function() {}, // check if the test has started
+    }
+}());
