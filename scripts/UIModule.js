@@ -27,10 +27,11 @@ var UIModule = (function() {
         spacePressed: function() {},
         enterPressed: function() {},
         emptyInput: function() {},
+        getTypedWord: function() {},
         //Test Words
         fillContent: function() {},
-        formatCurrentWord: function() {},
-        setActiveWord: function() {},
+        formattWord: function(wordObject, wordHTML) {},
+        setActiveWord: function(index) {},
         deactivateCurrentWord: function() {},
         scroll: function(){},
     };
