@@ -24,9 +24,9 @@ var UIModule = (function() {
         inputFocus: function() {},
         isNameEmpty: function() {},
         flagNameInput: function() {},
-        spacePressed(): function() {},
-        enterPressed(): function() {},
-        emptyInput(): function() {},
+        spacePressed: function() {},
+        enterPressed: function() {},
+        emptyInput: function() {},
         //Test Words
         fillContent: function() {},
         formatCurrentWord: function() {},
