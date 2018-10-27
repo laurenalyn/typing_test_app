@@ -21,6 +21,9 @@ Indicators/ Test Control & Test Results
             cpmChange: 0,
             accuracy: 0,
             accuracyChange: 0,
+            numOfCorrectWords: 0,
+            numOfCorrectCharacters: 0,
+            numOfTestCharacters: 0,
         },
 
         words: {
@@ -30,10 +33,19 @@ Indicators/ Test Control & Test Results
                 value: {
                     correct: '',
                     user: '',
+                    isCorrect: false
+                },
+                
+                character: {
+                    correct: [],
+                    user: [],
+                    totalCorrect: 0,
+                    totalTest: 0,
                 },
             },
         },
     };
+
     var word = function(){}; //word constructor
     word.prototype.update = function(value) {}; //update method
 
