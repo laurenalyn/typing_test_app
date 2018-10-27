@@ -1,5 +1,6 @@
 var UIModule = (function() {
 // private
+    //classes used to select HTML elements
     var DOMElements = {
         //Indicators/ Test Control
         timeLeft, //HTML element displaying time left

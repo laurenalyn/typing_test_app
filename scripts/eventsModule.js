@@ -1,4 +1,4 @@
-var eventsModule = (function() {
+var eventsModule = (function(dModule,uModule, cModule, wModule) {
     // private
     var addEventListeners = function() {
         //character typing event listener
@@ -12,5 +12,5 @@ var eventsModule = (function() {
             addEventListeners();
         }
     };
-}());
+}(dataModule, UIModule, certificateModule, wordsModule));
     
