@@ -7,7 +7,7 @@ Indicators/ Test Control & Test Results
 var appData = {
     indicators: {testStarted: false, testEnded: false, totalTestTime: 0, timeLeft: 0,},
     results: {wpm: 0, wpmChange: 0, cpm: 0, cpmChange: 0, accuracy: 0, accuracyChange: 0,}
-    words: {currentWordIndex: 0},
+    words: {currentWordIndex: 0 , testWords: [],},
 };
 
 // public
@@ -26,6 +26,9 @@ var dataModule = (function() {
     calculateWpm: function() {}, //calculates wpm and wpmChange and updates them in appData
     calculateCpm: function() {}, //calculates cpm and cpmChange and updates them in appData
     calculateAccuracy: function() {}, //calculates accuracy and accuracyChange and updates them in appData
+    // Test Words
+    fillListOfTestWords: function(textNumber) {}, //fills words.testWords
+    getListOfTestWords: function() {}, //get list of test words words.testWords
     };
 
 }());
