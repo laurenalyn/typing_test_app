@@ -1,4 +1,4 @@
-// ==============================
+/*==============================
 // Modular Design Pattern
 // ==============================
 
@@ -40,4 +40,6 @@ console.log(myModule.f2());
 myModule.f2().model = 'A6';
 // calls the updated module function
 console.log(myModule.f2());
-// ==============================*/
+==============================*/
+
+
